@@ -5,22 +5,25 @@ using kafka_training.Kafka;
 using kafka_training.Services;
 using kafka_training.Utils;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace kafka_training.Extensions;
 
 public static class ServiceCollectionExtensions
 {
+    public static IServiceCollection AddLogger(this IServiceCollection services) =>
+        services.AddLogging(logging => logging.AddConsole());
     public static IServiceCollection AddKafkaHandler(this IServiceCollection services) =>
-        services.AddScoped(typeof(IKafkaHandler<string, string>), typeof(KafkaMessageHandler<string, string>));
+        services.AddScoped<IKafkaHandler<string, string>, KafkaMessageHandler<string, string>>();
     
     public static IServiceCollection AddKafkaConfiguration(this IServiceCollection services) => 
-        services.AddSingleton(new KafkaConfiguration());
+        services.AddSingleton<KafkaConfiguration>();
 
     public static IServiceCollection AddServices(this IServiceCollection services) =>
-        services.AddScoped(typeof(LogAggregationService)).AddScoped(typeof(LogService));
+        services.AddScoped<LogAggregationService>().AddScoped<LogService>();
 
     public static IServiceCollection AddUtils(this IServiceCollection services) => 
-        services.AddScoped<ConsumerUtils>().AddScoped(typeof(ProducerUtils));
+        services.AddSingleton<ConsumerUtils>().AddSingleton<ProducerUtils>();
 
     public static IServiceCollection AddExceptionHandlers(this IServiceCollection services) =>
         services.AddSingleton<IExceptionHandlerCollection, ExceptionHandlers>()

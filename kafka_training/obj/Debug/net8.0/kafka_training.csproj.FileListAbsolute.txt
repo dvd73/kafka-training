@@ -47,3 +47,13 @@ C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Deb
 C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\obj\Debug\net8.0\kafka_training.sourcelink.json
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll

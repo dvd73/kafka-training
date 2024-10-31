@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kafka_training")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e0c8cbdfb1d954dedeb79b122cec6b47df4f213")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27cc811001f7cdf5ca3024ed85fa82553bccc67d")]
 [assembly: System.Reflection.AssemblyProductAttribute("kafka_training")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kafka_training")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

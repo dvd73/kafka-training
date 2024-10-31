@@ -5,10 +5,10 @@ namespace kafka_training.Exceptions.Handlers.Base;
 
 internal class AppExceptionHandler
 {
-    private readonly ILogger _logger;
+    private readonly ILogger<AppExceptionHandler> _logger;
     private readonly IExceptionHandlerCollection _handlerCollection;
 
-    internal AppExceptionHandler(ILogger logger, IExceptionHandlerCollection handlerCollection)
+    public AppExceptionHandler(ILogger<AppExceptionHandler> logger, IExceptionHandlerCollection handlerCollection)
     {
         _logger = logger;
         _handlerCollection = handlerCollection;
