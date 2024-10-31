@@ -1,4 +1,7 @@
-﻿using kafka_training.Kafka;
+﻿using kafka_training.Exceptions.Handlers;
+using kafka_training.Exceptions.Handlers.Base;
+using kafka_training.Exceptions.Handlers.Base.Interfaces;
+using kafka_training.Kafka;
 using kafka_training.Services;
 using kafka_training.Utils;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,4 +21,8 @@ public static class ServiceCollectionExtensions
 
     public static IServiceCollection AddUtils(this IServiceCollection services) => 
         services.AddScoped<ConsumerUtils>().AddScoped(typeof(ProducerUtils));
+
+    public static IServiceCollection AddExceptionHandlers(this IServiceCollection services) =>
+        services.AddSingleton<IExceptionHandlerCollection, ExceptionHandlers>()
+            .AddSingleton<AppExceptionHandler>();
 }

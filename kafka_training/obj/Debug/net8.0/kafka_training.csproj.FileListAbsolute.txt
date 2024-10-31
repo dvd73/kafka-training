@@ -41,3 +41,9 @@ C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\obj\Deb
 C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\obj\Debug\net8.0\kafka_training.pdb
 C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\obj\Debug\net8.0\kafka_training.genruntimeconfig.cache
 C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\obj\Debug\net8.0\ref\kafka_training.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\kafka_training\obj\Debug\net8.0\kafka_training.sourcelink.json
