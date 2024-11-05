@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "WXcESBLRWW9R0649R73c4ghNxWftxe6Jycre0LLiul8H6QIUT6iP2SVNDvF/3jWS491LJmwKvmqMiW1H4xh7TQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dmitry_Dolotovskikh\\RiderProjects\\kafka-training\\DiceServiceApplication\\DiceServiceApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\confluent.kafka\\2.6.0\\confluent.kafka.2.6.0.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\librdkafka.redist\\2.6.0\\librdkafka.redist.2.6.0.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0-rc.2.24473.5\\microsoft.extensions.configuration.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0-rc.2.24473.5\\microsoft.extensions.configuration.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.0-rc.2.24473.5\\microsoft.extensions.configuration.binder.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0-rc.2.24473.5\\microsoft.extensions.dependencyinjection.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0-rc.2.24473.5\\microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0-rc.2.24473.5\\microsoft.extensions.logging.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0-rc.2.24473.5\\microsoft.extensions.logging.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.logging.configuration\\9.0.0-rc.2.24473.5\\microsoft.extensions.logging.configuration.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.logging.console\\9.0.0-rc.2.24473.5\\microsoft.extensions.logging.console.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-rc.2.24473.5\\microsoft.extensions.options.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\9.0.0-rc.2.24473.5\\microsoft.extensions.options.configurationextensions.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-rc.2.24473.5\\microsoft.extensions.primitives.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.0-rc.2.24473.5\\system.diagnostics.diagnosticsource.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\system.io.pipelines\\9.0.0-rc.2.24473.5\\system.io.pipelines.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\system.text.encodings.web\\9.0.0-rc.2.24473.5\\system.text.encodings.web.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\system.text.json\\9.0.0-rc.2.24473.5\\system.text.json.9.0.0-rc.2.24473.5.nupkg.sha512"
+  ],
+  "logs": []
+}

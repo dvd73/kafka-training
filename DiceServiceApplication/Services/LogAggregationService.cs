@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using Confluent.Kafka;
-using DiceServiceApplication.Kafka;
+﻿using DiceServiceApplication.Kafka;
+using DiceServiceApplication.Services.Interfaces;
 using DiceServiceApplication.Utils;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace DiceServiceApplication.Services;
 
-public class LogAggregationService : IDisposable
+public class LogAggregationService : IDisposable, IAggregationService
 {
     private readonly KafkaConsumer<string, string> _consumer;
-    private readonly string _topic;
     private readonly CancellationTokenSource _cts = new();
+    private readonly string _topic;
 
-    public LogAggregationService(KafkaConfiguration kafkaConfiguration, ConsumerUtils utils)
+    public LogAggregationService(IKafkaConfiguration kafkaConfiguration, ConsumerFabric utils)
     {
         _topic = kafkaConfiguration.Topic;
-        _consumer = utils.CreateConsumer("log");
+        _consumer = utils.CreateLogConsumer("log");
     }
-    
+
     public async void Run()
     {
         var cancellationToken = _cts.Token;
@@ -30,6 +26,7 @@ public class LogAggregationService : IDisposable
     {
         if (!_cts.IsCancellationRequested) _cts.Cancel();
         _consumer.Close();
+        Dispose();
     }
 
     public void Dispose()
@@ -38,4 +35,3 @@ public class LogAggregationService : IDisposable
         _cts.Dispose();
     }
 }
-

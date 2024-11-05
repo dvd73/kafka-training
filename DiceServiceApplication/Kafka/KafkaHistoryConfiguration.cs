@@ -1,15 +1,13 @@
-﻿using Confluent.Kafka;
+﻿namespace DiceServiceApplication.Kafka;
 
-namespace DiceServiceApplication.Kafka;
-
-public class KafkaConfiguration 
+public class KafkaHistoryConfiguration : IKafkaConfiguration
 {
     public string Topic { get; set; }
     public string ClusterAddress { get; set; }
 
-    public KafkaConfiguration()
+    public KafkaHistoryConfiguration()
     {
-        Topic = "log-topic";
+        Topic = "history-topic";
         ClusterAddress = "localhost:19092,localhost:29092,localhost:39092";
     }
 }

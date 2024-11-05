@@ -10,9 +10,9 @@ public class LogService : IDisposable
     private readonly KafkaProducer<string, string> _producer;
     private readonly string _topic;
 
-    public LogService(KafkaConfiguration kafkaConfiguration, ProducerUtils utils)
+    public LogService(IKafkaConfiguration kafkaConfiguration, ProducerFabric utils)
     {
-        _producer = utils.CreateProducer();
+        _producer = utils.CreateLogProducer();
         _topic = kafkaConfiguration.Topic;
     }
 
