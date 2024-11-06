@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceServiceApplication", "D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{12491534-B9B4-4FE3-984A-D68D21220AF9}"
 	ProjectSection(SolutionItems) = preProject
-		..\compose.yml = ..\compose.yml
+		compose.yml = compose.yml
 	EndProjectSection
 EndProject
 Global

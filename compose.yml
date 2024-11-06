@@ -1,0 +1,73 @@
+services:
+  kafka1:
+    image: bitnami/kafka:latest
+    container_name: kafka1
+    ports:
+      - 19092:19092
+    expose:
+      - 9092
+      - 9093
+    volumes:
+      - ".\\kafka1-data\\:/bitnami/kafka"
+    environment:
+      - KAFKA_CFG_NODE_ID=1
+      - KAFKA_CFG_PROCESS_ROLES=controller, broker
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka1:9093,2@kafka2:9093, 3@kafka3:9093
+      - KAFKA_KRAFT_CLUSTER_ID=hqc96ImLRYOspu7aHu0S2w
+
+      - KAFKA_CFG_LISTENERS=INTERNAL://:9092,EXTERNAL://:19092,CONTROLLER://:9093
+      - KAFKA_CFG_ADVERTISED_LISTENERS=INTERNAL://kafka1:9092,EXTERNAL://localhost:19092
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=INTERNAL
+
+      - KAFKA_CFG_OFFSETS_TOPIC_RELOCATION_FACTOR=3
+    restart: unless-stopped
+  kafka2:
+    image: bitnami/kafka:latest
+    container_name: kafka2
+    ports:
+      - 29092:29092
+    expose:
+      - 9092
+      - 9093
+    volumes:
+      - ".\\kafka2-data\\:/bitnami/kafka"
+    environment:
+      - KAFKA_CFG_NODE_ID=2
+      - KAFKA_CFG_PROCESS_ROLES=controller, broker
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka1:9093,2@kafka2:9093, 3@kafka3:9093
+      - KAFKA_KRAFT_CLUSTER_ID=hqc96ImLRYOspu7aHu0S2w
+
+      - KAFKA_CFG_LISTENERS=INTERNAL://:9092,EXTERNAL://:29092,CONTROLLER://:9093
+      - KAFKA_CFG_ADVERTISED_LISTENERS=INTERNAL://kafka2:9092,EXTERNAL://localhost:29092
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=INTERNAL
+
+      - KAFKA_CFG_OFFSETS_TOPIC_RELOCATION_FACTOR=3
+    restart: unless-stopped
+  kafka3:
+    image: bitnami/kafka:latest
+    container_name: kafka3
+    ports:
+      - 39092:39092
+    expose:
+      - 9092
+      - 9093
+    volumes:
+      - ".\\kafka3-data\\:/bitnami/kafka"
+    environment:
+      - KAFKA_CFG_NODE_ID=3
+      - KAFKA_CFG_PROCESS_ROLES=controller, broker
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka1:9093,2@kafka2:9093, 3@kafka3:9093
+      - KAFKA_KRAFT_CLUSTER_ID=hqc96ImLRYOspu7aHu0S2w
+
+      - KAFKA_CFG_LISTENERS=INTERNAL://:9092,EXTERNAL://:39092,CONTROLLER://:9093
+      - KAFKA_CFG_ADVERTISED_LISTENERS=INTERNAL://kafka3:9092,EXTERNAL://localhost:39092
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=INTERNAL
+
+      - KAFKA_CFG_OFFSETS_TOPIC_RELOCATION_FACTOR=3
+    restart: unless-stopped
