@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WXcESBLRWW9R0649R73c4ghNxWftxe6Jycre0LLiul8H6QIUT6iP2SVNDvF/3jWS491LJmwKvmqMiW1H4xh7TQ==",
+  "dgSpecHash": "JdS7AgvuqJdZWA3vYP824YwP+zuX7EMVly6g2WPm46Z06m5kSNYhSWsEo1MdF/+LPyMKiEVX9qt0y16CnrgVbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dmitry_Dolotovskikh\\RiderProjects\\kafka-training\\DiceServiceApplication\\DiceServiceApplication.csproj",
+  "projectFilePath": "C:\\Projects\\Kafka training\\Продвинутый курс по Kafka\\Практика\\src\\DiceServiceApplication\\DiceServiceApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\confluent.kafka\\2.6.0\\confluent.kafka.2.6.0.nupkg.sha512",
     "C:\\Users\\Dmitry_Dolotovskikh\\.nuget\\packages\\librdkafka.redist\\2.6.0\\librdkafka.redist.2.6.0.nupkg.sha512",

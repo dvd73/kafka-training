@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DiceServiceApplication
-build_property.ProjectDir = C:\Users\Dmitry_Dolotovskikh\RiderProjects\kafka-training\DiceServiceApplication\
+build_property.ProjectDir = C:\Projects\Kafka training\Продвинутый курс по Kafka\Практика\src\DiceServiceApplication\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
