@@ -71,3 +71,15 @@ services:
 
       - KAFKA_CFG_OFFSETS_TOPIC_RELOCATION_FACTOR=3
     restart: unless-stopped
+  schemaregistry:
+    image: confluentinc/cp-schema-registry:latest
+    container_name: schemaregistry
+    ports:
+      - 8081:8081
+    environment:
+      - SCHEMA_REGISTRY_HOST_NAME=schema-registry
+      - SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS=PLAINTEXT://kafka1:9092,PLAINTEXT://kafka2:9092,PLAINTEXT://kafka3:9092
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
