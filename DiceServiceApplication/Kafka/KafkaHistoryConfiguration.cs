@@ -1,6 +1,6 @@
 ﻿namespace DiceServiceApplication.Kafka;
 
-public class KafkaHistoryConfiguration : IKafkaConfiguration
+public class KafkaHistoryConfiguration
 {
     public string Topic { get; set; }
     public string ClusterAddress { get; set; }

@@ -2,7 +2,7 @@
 
 namespace DiceServiceApplication.Kafka;
 
-public class KafkaLogConfiguration : IKafkaConfiguration 
+public class KafkaLogConfiguration 
 {
     public string Topic { get; set; }
     public string ClusterAddress { get; set; }

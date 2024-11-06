@@ -1,16 +1,15 @@
 ﻿using DiceServiceApplication.Kafka;
-using DiceServiceApplication.Services.Interfaces;
 using DiceServiceApplication.Utils;
 
 namespace DiceServiceApplication.Services;
 
-public class LogAggregationService : IDisposable, IAggregationService
+public class LogAggregationService : IDisposable
 {
     private readonly KafkaConsumer<string, string> _consumer;
     private readonly CancellationTokenSource _cts = new();
     private readonly string _topic;
 
-    public LogAggregationService(IKafkaConfiguration kafkaConfiguration, ConsumerFabric utils)
+    public LogAggregationService(KafkaLogConfiguration kafkaConfiguration, ConsumerFabric utils)
     {
         _topic = kafkaConfiguration.Topic;
         _consumer = utils.CreateLogConsumer("log");

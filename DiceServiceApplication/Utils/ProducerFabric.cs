@@ -8,9 +8,9 @@ namespace DiceServiceApplication.Utils;
 public class ProducerFabric
 {
     private readonly HistoryEntrySerializer _historyEntrySerializer;
-    private readonly IKafkaConfiguration _kafkaConfiguration;
+    private readonly KafkaLogConfiguration _kafkaConfiguration;
 
-    public ProducerFabric(IKafkaConfiguration kafkaConfiguration, HistoryEntrySerializer historyEntrySerializer)
+    public ProducerFabric(KafkaLogConfiguration kafkaConfiguration, HistoryEntrySerializer historyEntrySerializer)
     {
         _historyEntrySerializer = historyEntrySerializer;
         _kafkaConfiguration = kafkaConfiguration;
