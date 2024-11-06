@@ -1,10 +1,10 @@
 ﻿using System.Text;
 
-namespace DiceServiceApplication.Utils;
+namespace DiceServiceApplication.Extensions;
 
-public class Common
+public static class ExceptionExtensions
 {
-    public static string? ComposeFullExceptionMessage(Exception ex)
+    public static string? ComposeFullExceptionMessage(this Exception ex)
     {
         StringBuilder builder = new StringBuilder();
         Exception innerException = ex;

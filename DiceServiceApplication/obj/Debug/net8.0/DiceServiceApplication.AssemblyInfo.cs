@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiceServiceApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1ab1144ce12d4d5dcb4010fc21ff64c6a42b493")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43eedd8df13fa2ad8ff8b20eb7e2c4389ef2e0ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiceServiceApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiceServiceApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

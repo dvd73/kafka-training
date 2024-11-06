@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using DiceServiceApplication.Exceptions.Handlers.Base.Interfaces;
+using DiceServiceApplication.Extensions;
 
 namespace DiceServiceApplication.Exceptions.Handlers.Base;
 
@@ -18,7 +19,7 @@ internal abstract class BaseExceptionHandler<TException> : IExceptionHandler whe
     {
         if (HandlingRequired(exception))
         {
-            Details = Utils.Common.ComposeFullExceptionMessage(exception);
+            Details = exception.ComposeFullExceptionMessage();
             return true;
         }
 
